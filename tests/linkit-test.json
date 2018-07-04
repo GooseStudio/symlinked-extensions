@@ -1,0 +1,16 @@
+{
+  "mu-plugins": {
+    "target": "tests/test-data/web/app/mu-plugins/",
+    "src": []
+  },
+  "plugins": {
+    "target": "tests/test-data/web/app/plugins/",
+    "src": [
+    ]
+  },
+  "themes": {
+    "target": "tests/test-data/web/app/themes/",
+    "src": [
+    ]
+  }
+}

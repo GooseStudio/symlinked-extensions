@@ -1,0 +1,23 @@
+{
+    "name": "goose-studio/symlinked-extensions",
+    "description": "Replaces composer installed plugins, themes and mu-plugins with symlinks to defined folders.",
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Nurbo",
+            "email": "andreas@goose.studio"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GooseStudio\\LinkIt\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {},
+    "bin": ["bin/linkit"],
+    "prefer-stable": true
+}
