@@ -18,7 +18,7 @@ call_user_func(function ($version) {
         );
         exit(1);
     }
-	$options = getopt('',['linkit::','no-dev::','test::','hide::']);
+	$options = getopt('',['linkit::','no-dev::','test::','hide::','keep::']);
     $app = new GooseStudio\LinkIt\Application( $version, $options );
 	$app->run();
 }, '1.0');

@@ -39,3 +39,4 @@ Add below config to composer.json to run the script.
 * **--no-dev** excludes the script from running if "--no-dev" param is used in composer install/update.
 * **--linkit=full_path_to_json_file** use specified file as config.
 * **--hide** Do not print commands
+* **--keep** Do not remove existing folders, postfixes with number of folders.

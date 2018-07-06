@@ -55,6 +55,26 @@ class Test extends TestCase {
 		$this->assertTrue(is_link(__DIR__ . '/test-data/web/app/plugins/test-plugin'));
 	}
 
+	public function testRunKeep() {
+		$config = Config::create(__DIR__ . '/test-data/linkit.json');
+		$application = new Application( '0.1', ['hide'=>false, 'keep' => false], $config );
+		$this->assertFileExists( __DIR__ . '/test-data/web/app/plugins/test-plugin' );
+		$application->run();
+		$this->assertTrue(is_link(__DIR__ . '/test-data/web/app/plugins/test-plugin'));
+		$this->assertFileExists( __DIR__ . '/test-data/web/app/plugins/test-plugin-1' );
+	}
+
+	public function testRunKeepPreExisting() {
+		$config = Config::create(__DIR__ . '/test-data/linkit.json');
+		$application = new Application( '0.1', ['hide'=>false, 'keep' => false], $config );
+		$this->assertFileExists( __DIR__ . '/test-data/web/app/plugins/test-plugin' );
+		mkdir(__DIR__ . '/test-data/web/app/plugins/test-plugin-1', 0755, true);
+		mkdir(__DIR__ . '/test-data/web/app/plugins/test-plugin-2', 0755, true);
+		$application->run();
+		$this->assertTrue(is_link(__DIR__ . '/test-data/web/app/plugins/test-plugin'));
+		$this->assertFileExists( __DIR__ . '/test-data/web/app/plugins/test-plugin-3' );
+	}
+
 	public function tearDown() {
 		shell_exec('rm -R ' . __DIR__ . '/test-data/');
 	}
