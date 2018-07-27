@@ -62,7 +62,7 @@ class Application {
 	 *
 	 */
 	public function run() {
-		echo 'Running Symlinked Extensions v' . $this->version, "\n";
+		echo 'Running Symlinked Directories v' . $this->version, "\n";
 		if ( $this->has_no_dev && ( false !== getenv( 'COMPOSER_DEV_MODE' ) && 0 === (int) getenv( 'COMPOSER_DEV_MODE' ) ) ) {
 			$this->printStatement( '--no-dev detected, aborting.' );
 

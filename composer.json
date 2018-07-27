@@ -1,6 +1,6 @@
 {
-    "name": "goose-studio/symlinked-extensions",
-    "description": "Replaces composer installed plugins, themes and mu-plugins with symlinks to defined folders.",
+    "name": "goose-studio/symlinked-directories",
+    "description": "Replaces existing directories and/or adds symlinks to directories.",
     "require-dev": {
         "phpunit/phpunit": "^6.0"
     },

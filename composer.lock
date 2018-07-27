@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "677e5cab1295588375dfb47df8866080",
-    "content-hash": "0085e6ad96e3420a0517766a3cc33c6d",
+    "hash": "c36aa0f2a8457d3779308d9a89ac8936",
+    "content-hash": "f0c475c17723af2c2119b5d80f576b3c",
     "packages": [],
     "packages-dev": [
         {
@@ -759,16 +759,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "5.0.7",
+            "version": "5.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce"
+                "reference": "6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
-                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f",
+                "reference": "6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f",
                 "shasum": ""
             },
             "require": {
@@ -814,7 +814,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2018-05-29 13:50:43"
+            "time": "2018-07-13 03:27:23"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

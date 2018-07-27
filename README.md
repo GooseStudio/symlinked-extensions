@@ -1,5 +1,6 @@
-# Symlinked Extensions [![Build Status](https://travis-ci.org/GooseStudio/symlinked-extensions.svg?branch=master)](https://travis-ci.org/GooseStudio/symlinked-extensions)
-Simple script that replaces themes, plugins and mu-plugins with symlinks to development versions
+# Symlinked Directories [![Build Status](https://travis-ci.org/GooseStudio/symlinked-extensions.svg?branch=master)](https://travis-ci.org/GooseStudio/symlinked-extensions)
+Simple script that replaces a directory with a symlink. If the targeted directory does not exist symlink is still created.
+The symlink paths directory name is matched against the directories in the chosen target path.
 
 Add below config to composer.json to run the script.
 ```
